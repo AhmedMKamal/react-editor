@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import Editor from '@monaco-editor/react';
+
+const App = () => <Editor height="100vh" language="javascript" theme='dark' />;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
